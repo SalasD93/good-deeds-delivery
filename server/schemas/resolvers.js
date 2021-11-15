@@ -1,11 +1,29 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Category } = require('../models');
+const { User, Category, Product } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
   Query: {
     categories: async () => {
       return await Category.find();
+    },
+    products: async (parent, { category, name }) => {
+      const params = {};
+
+      if (category) {
+        params.category = category;
+      }
+
+      if (name) {
+        params.name = {
+          $regex: name
+        };
+      }
+
+      return await Product.find(params).populate('category');
+    },
+    product: async (parent, { _id }) => {
+      return await Product.findById(_id).populate('category');
     },
     user: async (parent, args, context) => {
         if (context.user) {
@@ -29,6 +47,11 @@ const resolvers = {
       }
   
       throw new AuthenticationError('Not logged in');
+    },
+    updateProduct: async (parent, { _id, quantity }) => {
+      const decrement = Math.abs(quantity) * -1;
+
+      return await Product.findByIdAndUpdate(_id, { $inc: { quantity: decrement } }, { new: true });
     },
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
