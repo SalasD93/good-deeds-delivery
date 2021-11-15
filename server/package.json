@@ -12,10 +12,11 @@
   "author": "Diana Salas",
   "license": "ISC",
   "dependencies": {
+    "@apollo/client": "^3.4.17",
     "apollo-server-express": "^2.11.0",
     "bcrypt": "^4.0.1",
     "dotenv": "^10.0.0",
-    "graphql": "^15.5.0",
+    "graphql": "^15.7.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.7",
     "stripe": "^8.67.0"
