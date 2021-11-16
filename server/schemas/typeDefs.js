@@ -15,7 +15,7 @@ const typeDefs = gql`
     price: Float
     category: Category
   }
-  
+
   type Order {
     _id: ID
     purchaseDate: String
