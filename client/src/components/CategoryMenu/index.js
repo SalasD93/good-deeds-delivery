@@ -41,11 +41,52 @@ function CategoryMenu() {
     });
   };
 
+  let categoryItems = 0;
+  for (let i = 0; i< categories.length; i++) {
+    categoryItems++
+  }
+  let word = '';
+  switch (categoryItems) {
+    case 1:
+      word = 'one'
+      break;
+    case 2:
+      word = 'two'
+      break;
+    case 3:
+      word = 'three'
+      break;
+    case 4:
+      word = 'four'
+      break;
+    case 5:
+      word = 'five'
+      break;
+    case 6:
+      word = 'six'
+      break;
+    case 7:
+      word = 'seven'
+      break;
+    case 8:
+      word = 'eight'
+      break;
+    case 9:
+      word = 'nine'
+      break;
+    case 10:
+      word = 'ten'
+      break;
+    default:
+      break;
+  }
+
   return (
     <div>
       <h2>Choose a Category:</h2>
+      <div className={`${word} ui buttons`}>
       {categories.map((item) => (
-        <button
+        <button className="ui button"
           key={item._id}
           onClick={() => {
             handleClick(item._id);
@@ -54,6 +95,7 @@ function CategoryMenu() {
           {item.name}
         </button>
       ))}
+      </div>
     </div>
   );
 }
