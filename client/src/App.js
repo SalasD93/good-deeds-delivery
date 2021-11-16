@@ -50,8 +50,8 @@ function App() {
               <Route exact path="/signup" element={<Signup />} />
               <Route exact path="/products:id" element={<CartDetail />} />
               <Route exact path="/success" element={<Success />} />
-              <Route exact path="/OrderHistory" element={<OrderHistory />} />
-              <Route exact path="/NoMatch" element={<NoMatch />} />
+              <Route exact path="/orderHistory" element={<OrderHistory />} />
+              <Route element={<NoMatch />} />
             </Routes>
           </StoreProvider>
         </div>
