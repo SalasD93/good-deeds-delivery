@@ -2,6 +2,7 @@
   "name": "good-deeds-delivery-client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "dependencies": {
     "@apollo/client": "^3.4.17",
     "@stripe/stripe-js": "^1.21.1",
