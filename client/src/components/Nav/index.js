@@ -13,13 +13,18 @@ function Nav() {
       return (
         <NavListMain>
           <NavItemMain>
+            <Link to="/">
+              HOME
+            </Link>
+          </NavItemMain>
+          <NavItemMain>
             <Link to="/orderHistory">
-              Order History
+              ORDER HISTORY
             </Link>
           </NavItemMain>
           <NavItemMain>
             <a href="/" onClick={() => Auth.logout()}>
-              Logout
+              LOGOUT
             </a>
           </NavItemMain>
         </NavListMain>
@@ -28,13 +33,18 @@ function Nav() {
       return (
         <NavListMain>
           <NavItemMain>
-            <Link to="/signup">
-              Signup
+            <Link to="/">
+              HOME
             </Link>
           </NavItemMain>
           <NavItemMain>
             <Link to="/login">
-              Login
+              LOGIN
+            </Link>
+          </NavItemMain>
+          <NavItemMain>
+            <Link to="/signup">
+              SIGNUP
             </Link>
           </NavItemMain>
         </NavListMain>
