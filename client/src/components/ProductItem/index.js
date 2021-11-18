@@ -8,7 +8,6 @@ import { Button, Card, Icon, Image } from 'semantic-ui-react';
 import { ProdCardCont, ProdBtnCont } from './styles';
 
 function ProductItem(item) {
-  console.log('this is working');
   const [state, dispatch] = useStoreContext();
 
   const {
