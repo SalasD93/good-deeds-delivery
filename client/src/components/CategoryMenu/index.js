@@ -44,7 +44,7 @@ function CategoryMenu() {
 
   return (
     <CatMainDiv>
-      <CatH2>CATEGORIES:</CatH2>
+      <CatH2>CATEGORIES</CatH2>
       <CatScrollDiv>
         <CatDiv>
         {categories.map((item) => (
