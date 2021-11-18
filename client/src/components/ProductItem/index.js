@@ -52,7 +52,7 @@ function ProductItem(item) {
   )
 
   const img = (
-    <Link to={`/products/${_id}`}>
+    <Link to={`/products/${_id}`} wrapped="true" ui="true">
       <Image
         alt={name}
         src={`/images/${image}`}
