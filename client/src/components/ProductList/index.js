@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Product from '../Product';
+import ProductItem from '../ProductItem';
 import { useStoreContext } from '../../utils/GlobalState';
 import { UPDATE_PRODUCTS } from '../../utils/actions';
 import { useQuery } from '@apollo/client';
@@ -49,7 +49,7 @@ function ProductList() {
       {state.products.length ? (
         <div className="flex-row">
           {filterProducts().map((product) => (
-            <Product
+            <ProductItem
               key={product._id}
               _id={product._id}
               image={product.image}
