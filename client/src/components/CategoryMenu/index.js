@@ -7,6 +7,7 @@ import {
 } from '../../utils/actions';
 import { QUERY_CATEGORIES } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
+import { CatMainDiv, CatH2, CatScrollDiv, CatDiv, CatBtn } from './styles';
 
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
@@ -41,62 +42,24 @@ function CategoryMenu() {
     });
   };
 
-  let categoryItems = 0;
-  for (let i = 0; i< categories.length; i++) {
-    categoryItems++
-  }
-  let word = '';
-  switch (categoryItems) {
-    case 1:
-      word = 'one'
-      break;
-    case 2:
-      word = 'two'
-      break;
-    case 3:
-      word = 'three'
-      break;
-    case 4:
-      word = 'four'
-      break;
-    case 5:
-      word = 'five'
-      break;
-    case 6:
-      word = 'six'
-      break;
-    case 7:
-      word = 'seven'
-      break;
-    case 8:
-      word = 'eight'
-      break;
-    case 9:
-      word = 'nine'
-      break;
-    case 10:
-      word = 'ten'
-      break;
-    default:
-      break;
-  }
-
   return (
-    <div>
-      <h2>Choose a Category:</h2>
-      <div className={`${word} ui buttons`}>
-      {categories.map((item) => (
-        <button className="ui button"
-          key={item._id}
-          onClick={() => {
-            handleClick(item._id);
-          }}
-        >
-          {item.name}
-        </button>
-      ))}
-      </div>
-    </div>
+    <CatMainDiv>
+      <CatH2>CATEGORIES:</CatH2>
+      <CatScrollDiv>
+        <CatDiv>
+        {categories.map((item) => (
+          <CatBtn
+            key={item._id}
+            onClick={() => {
+              handleClick(item._id);
+            }}
+          >
+            {item.name}
+          </CatBtn>
+        ))}
+        </CatDiv>
+      </CatScrollDiv>
+    </CatMainDiv>
   );
 }
 
