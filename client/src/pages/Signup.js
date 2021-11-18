@@ -4,7 +4,7 @@ import { useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
 import { Button, Form } from 'semantic-ui-react';
-import { FormContainer, FormH2, FormCard } from './PageStyles';
+import { FormContainer, FormH2, SignupCard } from './PageStyles';
 
 function Signup(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -37,7 +37,7 @@ function Signup(props) {
       <Link to="/login"><Button>← Go to Login</Button></Link>
 
       <FormContainer>
-        <FormCard>
+        <SignupCard>
           <FormH2>SIGNUP</FormH2>
           <Form onSubmit={handleFormSubmit}>
             <Form.Field>
@@ -80,7 +80,7 @@ function Signup(props) {
               <Button type="submit">SIGNUP</Button>
             </div>
           </Form>
-        </FormCard>
+        </SignupCard>
       </FormContainer>
     </div>
   );
