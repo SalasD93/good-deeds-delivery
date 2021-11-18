@@ -13,7 +13,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Nav from './components/Nav';
 import { StoreProvider } from './utils/GlobalState';
-import CartDetail from './pages/CartDetail';
+import ProductDetail from './pages/ProductDetail';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
 import NoMatch from './pages/NoMatch';
@@ -48,7 +48,7 @@ function App() {
               <Route exact path="/" element={<Home />} />
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/signup" element={<Signup />} />
-              <Route exact path="/products/:id" element={<CartDetail />} />
+              <Route exact path="/products/:id" element={<ProductDetail />} />
               <Route exact path="/success" element={<Success />} />
               <Route exact path="/orderHistory" element={<OrderHistory />} />
               <Route element={<NoMatch />} />
