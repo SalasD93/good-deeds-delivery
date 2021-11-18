@@ -6,7 +6,7 @@ import { useQuery } from '@apollo/client';
 import { QUERY_PRODUCTS } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 import spinner from '../../assets/spinner.gif';
-import { ProductsContainer } from './styles';
+import { ProductsContainer, ProdListH2 } from './styles';
 
 function ProductList() {
   const [state, dispatch] = useStoreContext();
@@ -46,7 +46,7 @@ function ProductList() {
 
   return (
     <div>
-      <h2>OUR PRODUCTS</h2>
+      <ProdListH2>OUR PRODUCTS</ProdListH2>
         {state.products.length ? (
           <ProductsContainer>
             {filterProducts().map((product) => (
