@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 export const ProdCardCont = styled.div`
-    margin-top: 1%;
-    margin-bottom: 1%;
+    display: inline-block;
+    margin: 1%;
+`;
+
+export const ProdBtnCont = styled.div`
+    float: right;
 `;

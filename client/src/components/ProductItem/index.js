@@ -5,7 +5,7 @@ import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
 import { Button, Card, Icon, Image } from 'semantic-ui-react';
-import { ProdCardCont } from './styles';
+import { ProdCardCont, ProdBtnCont } from './styles';
 
 function ProductItem(item) {
   console.log('this is working');
@@ -46,9 +46,9 @@ function ProductItem(item) {
     <div>
       <Icon name='coffee' />
       <span> {quantity} {pluralize("item", quantity)} in stock</span>
-      <div>
+      <ProdBtnCont>
         <Button onClick={addToCart}>Add to cart</Button>
-      </div>
+      </ProdBtnCont>
     </div>
   )
 
