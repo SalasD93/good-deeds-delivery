@@ -4,8 +4,11 @@ import { pluralize } from "../../utils/helpers"
 import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
+import { Button, Card, Icon, Image } from 'semantic-ui-react';
+import { ProdCardCont } from './styles';
 
-function Product(item) {
+function ProductItem(item) {
+  console.log('this is working');
   const [state, dispatch] = useStoreContext();
 
   const {
@@ -39,22 +42,30 @@ function Product(item) {
     }
   }
 
-  return (
-    <div className="card px-1 py-1">
-      <Link to={`/products/${_id}`}>
-        <img
-          alt={name}
-          src={`/images/${image}`}
-        />
-        <p>{name}</p>
-      </Link>
+  const extra = (
+    <div>
+      <Icon name='coffee' />
+      <span> {quantity} {pluralize("item", quantity)} in stock</span>
       <div>
-        <div>{quantity} {pluralize("item", quantity)} in stock</div>
-        <span>${price}</span>
+        <Button onClick={addToCart}>Add to cart</Button>
       </div>
-      <button onClick={addToCart}>Add to cart</button>
     </div>
+  )
+
+  const img = (
+    <Link to={`/products/${_id}`}>
+      <Image
+        alt={name}
+        src={`/images/${image}`}
+        />
+    </Link>
+  )
+
+  return (
+    <ProdCardCont>
+      <Card header={name} extra={extra} image={img} meta={price} />
+    </ProdCardCont>
   );
 }
 
-export default Product;
+export default ProductItem;
