@@ -47,6 +47,7 @@ export const CatScrollDiv = styled.div`
     }
     @media (max-width: 769px) {
         height: 55px;
+        overflow: auto;
     }
     @media (max-width: 376px) {
         height: 50px;
@@ -79,11 +80,11 @@ export const CatBtn = styled.button`
         font-size: 20px;
     }
     @media (max-width: 769px) {
-        width: 35%;
+        width: 34%;
         font-size: 18px;
     }
     @media (max-width: 415px) {
-        width: 45%;
+        width: 50%;
         font-size: 15px;
     }
     @media (max-width: 376px) {
