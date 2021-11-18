@@ -19,7 +19,7 @@ export const SignupCard = styled.div`
     display: flex;
     flex-direction: column;
     width: 30%;
-    background-color: #dce8e6;
+    background-color: rgba(84, 98, 99, 0.466);
     padding: 20px 30px;
     border-radius: 20px;
 
@@ -44,7 +44,7 @@ export const LoginCard = styled.div`
     display: flex;
     flex-direction: column;
     width: 30%;
-    background-color: #dce8e6;
+    background-color: rgba(84, 98, 99, 0.466);
     padding: 20px 30px;
     border-radius: 20px;
 
