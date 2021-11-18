@@ -13,7 +13,7 @@ function Nav() {
       return (
         <NavListMain>
           <NavItemMain>
-            <Link to="/">
+            <Link to="/" onClick="window.location.reload();">
               HOME
             </Link>
           </NavItemMain>
@@ -33,7 +33,7 @@ function Nav() {
       return (
         <NavListMain>
           <NavItemMain>
-            <Link to="/">
+            <Link to="/" onClick="window.location.reload();">
               HOME
             </Link>
           </NavItemMain>
@@ -57,7 +57,7 @@ function Nav() {
       <DivMain>
         <ImgMain src={logo} alt={alt} />
         <H1Main>
-          <Link to="/">
+          <Link to="/" onClick="window.location.reload();">
             Good Deeds Delivery
           </Link>
         </H1Main>
