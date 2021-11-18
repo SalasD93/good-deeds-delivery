@@ -29,6 +29,7 @@ export const DivMain = styled.div`
     @media (max-width: 1025px) {
         width: 100%;
         justify-content: center;
+        height: 8vh;
     }
 `;
 
@@ -91,7 +92,7 @@ export const NavListMain = styled.ul`
     justify-content: space-around;
     align-items: start;
     padding-left: 0;
-    width: 15vw;
+    width: 25vw;
     margin: 0;
     height: 100%;
 
@@ -107,7 +108,7 @@ export const NavItemMain = styled.li`
     display: block;
     text-align: center;
     height: 100%;
-    padding-top: 1.75rem;
+    padding-top: 1.5rem;
     color: white;
 
     &:hover {
