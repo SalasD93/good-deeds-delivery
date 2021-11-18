@@ -35,8 +35,12 @@ export const CatScrollDiv = styled.div`
     justify-content: center;
     width: 90vw;
     height: 50px;
-    overflow: auto;
+    overflow: hidden;
     white-space: nowrap;
+
+    &:hover {
+        overflow: auto;
+    }
 
     @media (max-width: 1025px) {
         height: 70px;
