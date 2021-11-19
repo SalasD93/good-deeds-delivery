@@ -104,7 +104,7 @@ export const NavListMain = styled.ul`
 export const NavItemMain = styled.li`
     font-size: 16px;
     font-weight: bolder;
-    width: 50%;
+    width: 150px;
     display: block;
     text-align: center;
     height: 100%;
@@ -117,7 +117,9 @@ export const NavItemMain = styled.li`
     }
 
     @media (max-width: 1025px) {
+        padding-top: 3%;
         font-size: 25px;
+        width: 200px;
     }
     @media (max-width: 415px) {
         font-size: 15px;
