@@ -1,3 +1,7 @@
+:root {
+  --main-text-color: #104a36;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -19,5 +23,5 @@ a, a:hover, a:focus, a:active  {
 }
 
 h2 {
-  color: #104a36;
+  color: var(--main-text-color);
 }

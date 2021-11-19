@@ -14,7 +14,7 @@ export const CatMainDiv = styled.div`
 `;
 
 export const CatH2 = styled.h2`
-    color: #104a36;
+    color: var(--main-text-color);
 
     @media (max-width: 1025px) {
         font-size: 30px;

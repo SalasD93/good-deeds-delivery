@@ -36,7 +36,7 @@ export const DivMain = styled.div`
 export const H1Main = styled.h1`
     margin-top: 0!important;
     margin-right: 2px;
-    color: #104a36;
+    color: var(--main-text-color);
 
     @media (max-width: 1025px) {
         font-size: 5rem;

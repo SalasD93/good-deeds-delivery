@@ -7,7 +7,7 @@ export const FormContainer = styled.div`
     align-items: center;
     width: 100%;
     margin-top: 5%;
-    color: #104a36;
+    color: var(--main-text-color);
 `;
 
 export const FormH2 = styled.h2`
