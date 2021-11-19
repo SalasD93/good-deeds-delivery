@@ -63,7 +63,7 @@ const Cart = () => {
   if (!state.cartOpen) {
     return (
       <div className="cart-closed" onClick={toggleCart}>
-        <img src={icon} className="cart-icon" />
+        <img src={icon} className="cart-icon" alt="Cart icon" />
       </div>
     );
   }
