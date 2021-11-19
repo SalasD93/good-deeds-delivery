@@ -5,6 +5,7 @@ import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
 import { Button, Form } from 'semantic-ui-react';
 import { FormContainer, FormH2, SignupCard } from './PageStyles';
+import redirectToLogin from '../utils/AuthenticationKroger';
 
 function Signup(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -77,7 +78,7 @@ function Signup(props) {
               />
             </Form.Field>
             <div>
-              <Button type="submit">SIGNUP</Button>
+              <Button type="submit" onClick={redirectToLogin}>SIGNUP</Button>
             </div>
           </Form>
         </SignupCard>
