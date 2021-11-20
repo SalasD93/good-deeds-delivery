@@ -25,7 +25,7 @@ export const SignupCard = styled.div`
 
     @media (max-width: 1025px) {
         width: 60%;
-        height: 35vh;
+        height: 40vh;
         justify-content: space-around;
     }
     @media (max-width: 769px) {
@@ -35,7 +35,7 @@ export const SignupCard = styled.div`
     }
     @media (max-width: 415px) {
         width: 90%;
-        height: 65vh;
+        height: 75vh;
         justify-content: center;
     }
 `;

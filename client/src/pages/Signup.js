@@ -8,7 +8,7 @@ import { FormContainer, FormH2, SignupCard } from './PageStyles';
 
 function Signup(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
-  const [addUser] = useMutation(ADD_USER);
+  const [addUser, { error }] = useMutation(ADD_USER);
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -86,6 +86,11 @@ function Signup(props) {
                 onChange={handleChange}
               />
             </Form.Field>
+            {error ? (
+              <div>
+                <p className="zip-p">The Zip code must be 5 characters.</p>
+              </div>
+            ) : null}
             <div>
               <Button type="submit">SIGNUP</Button>
             </div>

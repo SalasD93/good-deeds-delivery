@@ -23,7 +23,7 @@ export const DivMain = styled.div`
     justify-content: space-around;
     width: 350px;
     height: 7vh;
-    background-color: #ffff;
+    background-color: #ffffff;
     border-radius: 15px;
 
     @media (max-width: 1025px) {
@@ -37,6 +37,7 @@ export const H1Main = styled.h1`
     margin-top: 0!important;
     margin-right: 2px;
     color: var(--main-text-color);
+    font-size: 2rem!important;
 
     @media (max-width: 1025px) {
         font-size: 5rem;
@@ -50,7 +51,7 @@ export const H1Main = styled.h1`
 `;
 
 export const ImgMain = styled.img`
-    width: 75px;
+    width: 70px;
     height: 5vh;
     margin-top: 2%;
     border-top-left-radius: 15px;
@@ -92,7 +93,7 @@ export const NavListMain = styled.ul`
     justify-content: space-around;
     align-items: start;
     padding-left: 0;
-    width: 25vw;
+    width: 30vw;
     margin: 0;
     height: 100%;
 
@@ -109,7 +110,7 @@ export const NavItemMain = styled.li`
     text-align: center;
     height: 100%;
     padding-top: 1.5rem;
-    color: white;
+    color: #ffffff;
 
     &:hover {
         background-color: #32cf98;

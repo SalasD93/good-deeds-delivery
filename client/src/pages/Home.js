@@ -13,9 +13,6 @@ const Home = () => {
     user = data.user;
   }
 
-  console.log(data);
-  console.log(user);
-
   return (
     <div>
       {user ? <p className="location-p">Your Location: <span>{user.zipCode}</span></p> : null}

@@ -101,6 +101,10 @@ h2 {
   margin: 0 .5rem 1rem 0;
 }
 
+.zip-p {
+  margin-bottom: 1%;
+}
+
 @media screen and (max-width: 1025px) {
   .cart-closed {
     width: 65px;
