@@ -82,7 +82,6 @@ function Signup(props) {
               <input
                 placeholder="12345"
                 name="zipCode"
-                type="zipCode"
                 id="zipCode"
                 onChange={handleChange}
               />
