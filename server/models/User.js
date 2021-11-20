@@ -26,6 +26,12 @@ const userSchema = new Schema({
     required: true,
     minlength: 5
   },
+  zipCode: {
+    type: String,
+    required: true,
+    minlength: [5, 'Zip code must be a length of 5 characters.'],
+    maxlength: [5, 'Zip code must be a length of 5 characters.']
+  },
   orders: [Order.schema]
 });
 
