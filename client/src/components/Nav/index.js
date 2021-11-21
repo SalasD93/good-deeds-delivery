@@ -23,6 +23,11 @@ function Nav() {
             </Link>
           </NavItemMain>
           <NavItemMain>
+            <Link to="/map">
+              DELIVER
+            </Link>
+          </NavItemMain>
+          <NavItemMain>
             <a href="/" onClick={() => Auth.logout()}>
               LOGOUT
             </a>
