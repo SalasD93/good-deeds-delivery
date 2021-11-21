@@ -166,6 +166,8 @@ db.once('open', async () => {
     email: 'testing@test.com',
     password: 'Testing123!',
     zipCode: '33773',
+    latitude: 'lat: 27.88',
+    longitude: 'lng: -82.8',
     orders: [
       {
         products: [products[0]._id, products[1]._id, products[4]._id]

@@ -36,6 +36,8 @@ export const ADD_USER = gql`
     $email: String!
     $password: String!
     $zipCode: String!
+    $latitude: String!
+    $longitude: String!
   ) {
     addUser(
       firstName: $firstName
@@ -43,11 +45,25 @@ export const ADD_USER = gql`
       email: $email
       password: $password
       zipCode: $zipCode
+      latitude: $latitude
+      longitude: $longitude
     ) {
       token
       user {
         _id
       }
     }
+  }
+`;
+
+export const UPDATE_USER = gql`
+  mutation updateUser(
+    $latitude: String!
+    $longitude: String!
+  ) {
+    updateUser(
+      latitude: $latitude
+      longitude: $longitude
+    )
   }
 `;

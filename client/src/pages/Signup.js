@@ -5,6 +5,7 @@ import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
 import { Button, Form } from 'semantic-ui-react';
 import { FormContainer, FormH2, SignupCard } from './PageStyles';
+// import SetCoords from '../utils/SetCoords';
 
 function Signup(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -19,6 +20,8 @@ function Signup(props) {
         firstName: formState.firstName,
         lastName: formState.lastName,
         zipCode: formState.zipCode,
+        latitude: '',
+        longitude: ''
       },
     });
     const token = mutationResponse.data.addUser.token;
@@ -93,6 +96,7 @@ function Signup(props) {
             ) : null}
             <div>
               <Button type="submit">SIGNUP</Button>
+              {/* <Button type="submit" onClick={SetCoords}>SIGNUP</Button> */}
             </div>
           </Form>
         </SignupCard>
