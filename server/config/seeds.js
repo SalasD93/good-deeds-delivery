@@ -160,20 +160,78 @@ db.once('open', async () => {
 
   await User.deleteMany();
 
-  await User.create({
-    firstName: 'Diana',
-    lastName: 'Salas',
-    email: 'testing@test.com',
-    password: 'Testing123!',
-    zipCode: '33773',
-    latitude: 'lat: 27.88',
-    longitude: 'lng: -82.8',
-    orders: [
-      {
-        products: [products[0]._id, products[1]._id, products[4]._id]
-      }
-    ]
-  });
+  await User.create(
+    {
+      firstName: 'Diana',
+      lastName: 'Salas',
+      email: 'testing@test.com',
+      password: 'Testing123!',
+      zipCode: '33773',
+      latitude: '27.87986',
+      longitude: '-82.75092',
+      orders: [
+        {
+          products: [products[0]._id, products[1]._id, products[4]._id]
+        }
+      ]
+    },
+    {
+      firstName: 'Ani',
+      lastName: 'Vader',
+      email: 'Vader1@test.com',
+      password: 'Testing123!',
+      zipCode: '33772',
+      latitude: '27.84179',
+      longitude: '-82.79544',
+      orders: [
+        {
+          products: [products[2]._id, products[4]._id, products[6]._id]
+        }
+      ]
+    },
+    {
+      firstName: 'Xan',
+      lastName: 'Ollivander',
+      email: 'XO@test.com',
+      password: 'Testing123!',
+      zipCode: '33771',
+      latitude: '27.90803',
+      longitude: '-82.75529',
+      orders: [
+        {
+          products: [products[5]._id, products[7]._id, products[9]._id]
+        }
+      ]
+    },
+    {
+      firstName: 'Han',
+      lastName: 'Solo',
+      email: 'Solo@test.com',
+      password: 'Testing123!',
+      zipCode: '33774',
+      latitude: '27.88301',
+      longitude: '-82.82732',
+      orders: [
+        {
+          products: [products[0]._id, products[2]._id, products[10]._id]
+        }
+      ]
+    },
+    {
+      firstName: 'Padme',
+      lastName: 'Skywalker',
+      email: 'Princess@test.com',
+      password: 'Testing123!',
+      zipCode: '33775',
+      latitude: '27.91560',
+      longitude: '-82.80650',
+      orders: [
+        {
+          products: [products[4]._id, products[5]._id, products[8]._id]
+        }
+      ]
+    }
+  );
 
   console.log('users seeded');
 
