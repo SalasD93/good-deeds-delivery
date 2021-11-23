@@ -73,13 +73,13 @@ export const QUERY_USER = gql`
 export const QUERY_ALL_USERS = gql`
   {
     users {
+      _id
       firstName
       lastName
       email
       zipCode
       latitude
       longitude
-      orders
     }
   }
 `;
