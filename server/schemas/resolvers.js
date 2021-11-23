@@ -41,6 +41,11 @@ const resolvers = {
 
         throw new AuthenticationError('Not logged in');
     },
+    users: async () => {
+      const userData = await User.find().select('_id firstName lastName email zipcode latitude longitude order');
+
+      return userData;
+    },
     order: async (parent, { _id }, context) => {
       if (context.user) {
         const user = await User.findById(context.user._id).populate({
