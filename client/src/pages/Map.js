@@ -17,7 +17,7 @@ function Map() {
     if (data) {
       setUsers(data.users);
     };
-  });
+  }, [data]);
   
   const [selectedUser, setSelectedUser] = useState(null);
 
