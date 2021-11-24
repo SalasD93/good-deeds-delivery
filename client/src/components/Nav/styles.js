@@ -93,7 +93,7 @@ export const NavListMain = styled.ul`
     justify-content: space-around;
     align-items: start;
     padding-left: 0;
-    width: 30vw;
+    width: 50vw;
     margin: 0;
     height: 100%;
 
