@@ -12,6 +12,8 @@ This application was created to help the elderly and disabled save on delivery f
 
 ## Table of Contents
 
+* [Contributors](#contributors)
+
 * [Mock-Up](#mock-up)
 
 * [Built-With](#built-with)
@@ -29,6 +31,11 @@ This application was created to help the elderly and disabled save on delivery f
 * [Deployed](#deployed)
 
 * [Repository](#repository)
+
+
+## Contributors
+
+Diana Salas is the sole contributor to this project. However, the name for the application, "Good Deeds Delivery", came from a brainstorming session with Guillermo Fernandez.
 
 
 ## Mock-Up
