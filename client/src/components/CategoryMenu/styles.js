@@ -70,7 +70,7 @@ export const CatBtn = styled.button`
     display: inline-block;
     width: 20%;
     height: 90%;
-    background-color: #787777;
+    background-color: var(--tertiary-background-color);
     color: var(--secondary-text-color);
     font-size: 16px;
     font-weight: bolder;
