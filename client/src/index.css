@@ -1,5 +1,9 @@
 :root {
+  --main-background-color: #d3eff0;
+  --secondary-background-color: #879fa1;
+  --tertiary-background-color: #787777;
   --main-text-color: #104a36;
+  --secondary-text-color: #ffff;
 }
 
 * {
@@ -15,8 +19,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  /* background-color: rgba(84, 98, 99, 0.466)!important; */
-  background-color: rgba(188, 245, 247, 0.466)!important;
+  background-color: var(--main-background-color)!important;
 }
 
 a, a:hover, a:focus, a:active  {
@@ -42,7 +45,7 @@ h2 {
   min-width: 20%;
   max-width: 30%;
   max-height: 60%;
-  background-color: grey;
+  background-color: var(--tertiary-background-color);
   overflow: auto;
   padding: .5rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
@@ -51,7 +54,7 @@ h2 {
 
 .cart h2 {
   font-size: 1.5rem;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid var(--tertiary-background-color);
   padding-bottom: .5rem;
   margin: 1rem 0;
 }
@@ -61,7 +64,7 @@ h2 {
   top: .5rem;
   right: .5rem;
   cursor: pointer;
-  color: white;
+  color: var(--secondary-text-color);
 }
 
 .cart .close:hover {
