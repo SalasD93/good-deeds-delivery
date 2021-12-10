@@ -71,7 +71,7 @@ export const CatBtn = styled.button`
     width: 20%;
     height: 90%;
     background-color: #787777;
-    color: #ffffff;
+    color: var(--secondary-text-color);
     font-size: 16px;
     font-weight: bolder;
 

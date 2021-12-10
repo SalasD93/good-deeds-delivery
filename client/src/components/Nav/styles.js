@@ -23,7 +23,7 @@ export const DivMain = styled.div`
     justify-content: space-around;
     width: 350px;
     height: 7vh;
-    background-color: #ffffff;
+    background-color: var(--secondary-text-color);
     border-radius: 15px;
 
     @media (max-width: 1025px) {
@@ -110,7 +110,7 @@ export const NavItemMain = styled.li`
     text-align: center;
     height: 100%;
     padding-top: 1.5rem;
-    color: #ffffff;
+    color: var(--secondary-text-color);
 
     &:hover {
         background-color: #32cf98;
