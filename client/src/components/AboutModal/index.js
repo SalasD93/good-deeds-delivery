@@ -3,9 +3,12 @@ import { Button, Header, Icon, Modal } from 'semantic-ui-react'
 
 function AboutModal() {
   const [open, setOpen] = useState(false);
+  const isModalClosed = localStorage.getItem('modalClosed');
 
   useEffect(() => {
-    setOpen(true);
+    if (!isModalClosed) {
+      setOpen(true);
+    }
   }, []);
 
   return (
@@ -20,7 +23,7 @@ function AboutModal() {
         </p>
       </Modal.Description>
       <Modal.Actions>
-        <Button color='green' onClick={() => setOpen(false)}>
+        <Button color='green' onClick={() => {setOpen(false); return localStorage.setItem('modalClosed', 'true');}}>
           <Icon name='checkmark' /> Okay
         </Button>
       </Modal.Actions>
