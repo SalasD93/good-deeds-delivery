@@ -31,6 +31,16 @@ h2 {
   color: var(--main-text-color);
 }
 
+.about-modal {
+  width: 90%;
+  height: 30%;
+  padding: 2%;
+}
+
+.about-modal-desc {
+  height: 80%;
+}
+
 .location-p {
   padding-top: 1%;
   padding-left: 1%;
@@ -123,6 +133,10 @@ h2 {
 }
 
 @media screen and (max-width: 415px) {
+  .about-modal {
+    height: 45%;
+  }
+
   .location-p {
     padding-left: 32%;
   }

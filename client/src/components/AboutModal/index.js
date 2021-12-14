@@ -15,8 +15,9 @@ function AboutModal() {
     <Modal
       open={open}
       trigger={window.onload}
+      className='about-modal'
     >
-      <Modal.Description>
+      <Modal.Description className='about-modal-desc'>
       <Header>About this site</Header>
         <p>
           This application allows the eldery and disabled to submit grocery orders for pickup, and allows citizens in the local community to volunteer their time to pick up the orders and drop them off. This is to allow those with fixed income to avoid excessive delivery charges.
