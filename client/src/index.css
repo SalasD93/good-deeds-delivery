@@ -33,7 +33,7 @@ h2 {
 
 .about-modal {
   width: 90%;
-  height: 30%;
+  height: 40%;
   padding: 2%;
 }
 
@@ -119,6 +119,10 @@ h2 {
 }
 
 @media screen and (max-width: 1025px) {
+  .about-modal {
+    height: 30%;
+  }
+
   .cart-closed {
     width: 65px;
     height: 65px;
