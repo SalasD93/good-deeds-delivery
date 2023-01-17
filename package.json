@@ -1,10 +1,13 @@
 {
+  "homepage": "http://SalasD93.github.io/good-deeds-delivery",
   "name": "good-deeds-delivery",
   "version": "1.0.0",
   "description": "project-3",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
@@ -14,7 +17,8 @@
   "author": "Diana Salas",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^5.1.0",
+    "gh-pages": "^4.0.0"
   },
   "dependencies": {
     "styled-components": "^5.3.3"
