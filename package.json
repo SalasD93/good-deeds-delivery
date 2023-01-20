@@ -1,6 +1,6 @@
 {
-  "homepage": "https://salasd93.github.io/good-deeds-delivery/",
   "name": "good-deeds-delivery",
+  "homepage": "https://salasd93.github.io/good-deeds-delivery/",
   "version": "1.0.0",
   "description": "project-3",
   "main": "server/server.js",
